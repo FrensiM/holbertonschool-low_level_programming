@@ -25,7 +25,7 @@ printf("The number is zero \n");
 }
 else
 {
-printf("The number is negative \n");
+printf("%ld is negative \n");
 }
 return (0);
 }
