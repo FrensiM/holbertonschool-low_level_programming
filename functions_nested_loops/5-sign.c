@@ -1,6 +1,5 @@
 #include "main.h"
 /**
-*
 * print_sign - main function
 * @n: Parameter for letters
 * Return: Always 0 (success)
