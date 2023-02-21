@@ -1,5 +1,9 @@
 #include "main.h"
-
+/**
+* _abs - main function
+* @n: Parameter for letters
+* Return: Always 0 (success)
+*/
 int _abs(int n)
 {
 	if (n > 0)
@@ -10,7 +14,7 @@ int _abs(int n)
 	{
 		return (n * -1);
 	}
-	else 
+	else
 	{
 		return (0);
 	}
