@@ -1,7 +1,8 @@
 #include "main.h"
 /**
+*
 * print_sign - main function
-* @c: Parameter for letters
+* @n: Parameter for letters
 * Return: Always 0 (success)
 */
 int print_sign(int n)
