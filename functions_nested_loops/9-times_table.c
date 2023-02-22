@@ -15,7 +15,6 @@ int product = i * j;
 if (product < 10)
 {
 _putchar(' ');
-_putchar(' ');
 _putchar(product + '0');
 }
 else if (product < 100)
