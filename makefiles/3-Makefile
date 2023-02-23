@@ -9,6 +9,6 @@ re: oclean alll
 fclean: oclean clean
 oclean:
 	$(RM) -f $(OBJ)
-clena:
+clean:
 	$(RM) -f *~ $(NAME)
 
