@@ -1,15 +1,12 @@
 #include "main.h"
 /**
-* mul - multiple
-* Return - return
+* mul - main function
 * @a: num
 * @b: num2
-* @mul: mul1
+* Return: a times b
 */
 
 int mul(int a, int b)
 {
-	int mul = a + b;
-
-	return (mul);
+	return (a * b);
 }
