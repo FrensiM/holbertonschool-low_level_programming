@@ -1,12 +1,12 @@
 #include "main.h"
 /**
- *
- *
+ *print_square - main fun
+ *@size: numer
  *
  */
 void print_square(int size)
 {
-	int i,j;
+	int i, j;
 
 	if (size <= 0)
 	{
