@@ -1,5 +1,9 @@
 #include <stdio.h>
-int main (void)
+/**
+ * main- main func
+ * Return: 0 if it all went well
+ */
+int main(void)
 {
 	int i;
 
@@ -10,7 +14,7 @@ int main (void)
 			printf("Buzz\n");
 			return (0);
 		}
-		if ((i % 5)== 0 && (i % 3) == 0)
+		if ((i % 5) == 0 && (i % 3) == 0)
 		{
 			printf("FizzBuzz ");
 			continue;
@@ -20,7 +24,7 @@ int main (void)
 			printf("Buzz ");
 			continue;
 		}
-		else if ((i % 3) ==0)
+		else if ((i % 3) == 0)
 		{
 			printf("Fizz ");
 			continue;
