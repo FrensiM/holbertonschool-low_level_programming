@@ -1,13 +1,17 @@
 #include "main.h"
-
+/**
+ * puts2 - main fun
+ * @str: str
+ */
 void puts2(char *str)
 {
-	int i, len;
+	int i;
 
-	for (i=0; str[i] != '\0'; i++)
+	for (i = 0; str[i] != '\0'; i++)
 	{
-		len = i;
+		if (i % 2 == 0)
+			_putchar(str[i]);
+		i++;
 	}
-	for (i = len; str[i] != '\0'; i=i+2)
-		_putchar(str[i]);
+	_putchar('\n');
 }
