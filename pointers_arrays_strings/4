@@ -2,7 +2,6 @@
 /**
  * _strlen - main func
  * @s: s char
- * Return: returns the length
  */
 int _strlen(char *s)
 {
