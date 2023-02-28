@@ -4,7 +4,7 @@
  * _strcpy - main funks
  * @dest: dest
  * @src: src
- * Return (dest_new) - return the value
+ * Return: return the value
  */
 char *_strcpy(char *dest, char *src)
 {
