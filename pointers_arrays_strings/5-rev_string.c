@@ -1,13 +1,22 @@
 #include "main.h"
 #include <stdio.h>
+/**
+ * rev_string - main fun
+ * @s: s
+ *
+ */
 void rev_string(char *s)
 {
-	int i, len;
+	int i, tmp, len;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
 		len = i;
 	}
-	for (i = len; i >= 0; i--)
-		printf("%d\n", *s);
+	for (i = 0; i < len / 2; i++)
+	{
+		tmp = s[i];
+		s[i] = s[len - i];
+		s[len - i] = tmp;
+	}
 }
