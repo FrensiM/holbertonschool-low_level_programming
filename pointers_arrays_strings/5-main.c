@@ -1,18 +1,18 @@
+#include "main.h"
 #include <stdio.h>
 
-void rev_string(char *);
-
 /**
- * main - check the code for Holberton School students.
+ * main - check the code
  *
  * Return: Always 0.
  */
 int main(void)
 {
-	char s[11] = "Holberton!";
+    char str[] = "Look up!\n";
+    char *ptr;
 
-	printf("%s\n", s);
-	rev_string(s);
-	printf("%s\n", s);
-	return (0);
+    ptr = string_toupper(str);
+    printf("%s", ptr);
+    printf("%s", str);
+    return (0);
 }
