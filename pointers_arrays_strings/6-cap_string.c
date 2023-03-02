@@ -1,6 +1,8 @@
 #include "main.h"
 /**
- *
+ * *cap_string - main fun
+ * @str: strin
+ * Return: return the value
  */
 char *cap_string(char *str)
 {
@@ -20,6 +22,6 @@ char *cap_string(char *str)
 			}
 	}
 	return (str);
-}	
+}
 
 
