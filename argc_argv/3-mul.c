@@ -4,7 +4,7 @@
  * main - main fu
  * @argc: arg
  * @argv: argv
- * Return - return th v
+ * Return: return th v
  */
 int main(int argc, char *argv[])
 {
