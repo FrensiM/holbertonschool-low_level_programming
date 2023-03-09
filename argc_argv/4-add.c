@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
+#include "main.h"
 /**
  * main - main fun
  * @argc: argc
@@ -10,26 +12,44 @@ int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
-	if (argc == 1)
+	for (i = 1; i < argc; i++)
 	{
-		printf("0\n");
-		return (0);
-	}
-	else
-	{
-		for (i = 1; i < argc; i++)
+		if (*argv[i] >= '0' && *argv[i] <= '9')
 		{
-			if (*argv[i] >= '0' && *argv[i] <= '9')
-			{
+			if (_num(argv[i]) == 1)
 				sum = sum + atoi(argv[i]);
-			}
 			else
 			{
 				printf("Error\n");
-				return (1);
+				exit(-1);
 			}
+		}
+		else
+		{
+			printf("Error\n");
+			exit(-1);
 		}
 	}
 	printf("%d\n", sum);
 		return (0);
+}
+/**
+ * _num - ma
+ * @s: char
+ * Return: return main value
+ */
+int _num(char *s)
+{
+	int i, size;
+
+	size = strlen(s);
+
+	for (i = 0; i < size; i++)
+	{
+		if (s[i] >= '0' && s[i] <= '9')
+			continue;
+		else
+			return (-1);
+	}
+	return (1);
 }
