@@ -1,6 +1,8 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
+#include <stddef.h>
+#include <stdio.h>
 typedef struct print
 {
 	char *f_type;
