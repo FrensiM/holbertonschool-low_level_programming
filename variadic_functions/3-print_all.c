@@ -60,20 +60,23 @@ void print_all(const char * const format, ...)
 	};
 	va_start(arg_list, format);
 
-	while (format[i] != '\0' && format != NULL)
+	if (format != NULL)
 	{
-		j = 0;
-		while (j < 4 && format[i] != *print_functions[j].f_type)
+		while ((format[i] != '\0'))
 		{
-			j++;
+			j = 0;
+			while (j < 5 && format[i] != *print_functions[j].f_type)
+			{
+				j++;
+			}
+			if (j < 5)
+			{
+				printf("%s", sep);
+				print_functions[j].print(arg_list);
+				sep = ", ";
+			}
+			i++;
 		}
-		if (j < 4)
-		{
-			printf("%s", sep);
-			print_functions[j].print(arg_list);
-			sep = ", ";
-		}
-		i++;
 	}
 	printf("\n");
 	va_end(arg_list);
