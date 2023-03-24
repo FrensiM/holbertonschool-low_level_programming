@@ -52,16 +52,15 @@ void print_all(const char * const format, ...)
 		{"c", print_char},
 		{"i", print_int},
 		{"f", print_float},
-		{"s", print_string}
+		{"s", print_string},
+		{NULL, NULL}
 	};
 	va_start(arg_list, format);
 
 	while (format[i] != '\0' && format != NULL)
 	{
-		if (print_functions == NULL)
-			break;
 		j = 0;
-		while (j < 4 && format[i] != *print_functions[j].f_type)
+		while (print_functions[j].f_type != NULL)
 		{
 			j++;
 		}
