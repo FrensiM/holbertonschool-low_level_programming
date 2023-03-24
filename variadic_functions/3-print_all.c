@@ -4,29 +4,31 @@
 #include <stdlib.h>
 /**
  * print_char - cchar fun
- * @va_list: list of elem
+ * @list: list of elem
  */
 void print_char(va_list list)
 {
-	printf("%c" , va_arg(list, int));
+	printf("%c", va_arg(list, int));
 }
 /**
  * print_int - int fun
- * @va_list: lists
+ * @list: lists
  */
 void print_int(va_list list)
 {
 	printf("%d", va_arg(list, int));
 }
 /**
- *
+ * print_float - un of floats
+ * @list: list
  */
 void print_float(va_list list)
 {
 	printf("%f", va_arg(list, double));
 }
 /**
- *
+ * print_string - main fun
+ * @list: list
  */
 void print_string(va_list list)
 {
@@ -39,7 +41,8 @@ void print_string(va_list list)
 
 }
 /**
- *
+ * print_all - print fun
+ * @format: format type
  */
 void print_all(const char * const format, ...)
 {
