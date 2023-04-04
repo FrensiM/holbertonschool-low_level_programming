@@ -4,7 +4,6 @@
 #include "lists.h"
 /**
  * print_dlistint - funk
- * @dlistint_t: list
  * @h: head
  * Return: return the nr of elemetn
  */
