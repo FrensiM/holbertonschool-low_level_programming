@@ -1,9 +1,9 @@
+#include "lists.h"
 #include <stdio.h>
 #include <stddef.h>
-#include "lists.h"
 #include <stdlib.h>
 /**
- * insert_dnodeint_at_index - insert node at index
+ * insert_dnodeint_at_index - function that inserts a node at a given pos
  * @h: list head
  * @idx: where to insert node
  * @n: value
@@ -39,4 +39,5 @@ dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 	temp->next->prev = new;
 	temp->next = new;
 	return (new);
+
 }
