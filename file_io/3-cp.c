@@ -19,12 +19,11 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 	cp(argv[1], argv[2]);
-	
 	return (0);
 }
 /**
  * cp - copy from a file to another file
- * @file_form: the file destination
+ * @file_from: the file destination
  * @file_to: the source file
  */
 void cp(char *file_from, char *file_to)
@@ -38,21 +37,18 @@ void cp(char *file_from, char *file_to)
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	
 	file_dest = open(file_to, O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (file_dest == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 		exit(99);
 	}
-
 	r_src = read(file_src, count, 1024);
 	if (r_src == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", file_from);
 		exit(98);
 	}
-	
 	while (r_src != 0)
 	{
 		w_dest = write(file_dest, count, r_src);
